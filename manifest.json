@@ -1,0 +1,25 @@
+{
+	"name" : "Soundcloud Shuffle",
+	"version" : "0.1",
+	"description" : "Shuffle through Soundcloud",
+	"icons" : {
+		  "16" : "megusta_16.png",
+		  "48" : "megusta_48.png",
+		  "128" : "megusta_128.png"
+		  },
+	"page_action": {
+			  "default_icon" : "megusta_16.png",
+			  "default_title" : "Begin Reddit Rage Spree"
+			},
+	"permissions" : [
+		      "tabs"
+		      ],
+	"content_scripts" : [
+			  {
+				"matches" : ["http://soundcloud.com/*","https://soundcloud.com/*"],
+				"js" : ["jquery-1.6.4.min.js","content_script.js"],
+				"css" : ["megusta.css"]
+			}
+			]
+
+}		  
